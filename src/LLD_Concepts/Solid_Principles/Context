@@ -1,0 +1,22 @@
+Single Responsibility Principle (SRP)
+ - A class should have only one reason to change, meaning it should only have one job or responsibility.
+ - Example: Invoice class handles the calculation of total amount of marker, while a separate class handles the printing of the invoice.
+
+Open/Closed Principle (OCP)
+ - Open for extension but closed for modification.
+ - Example: If we want to save Invoice in a different format, we can create a new class say SaveToDB and SaveToFile that extends the Invoice class without modifying the original class.
+
+Liskov Substitution Principle (LSP)
+ - If Class B is subtype of Class A, then we should be able to replace object of A with object of B without breaking the behaviour of the program.
+ - Example: Bike has a method to start the engine, if we have a car then we can override the method to start the engine
+            but if we create a subclass Cycle that does not have an engine, it should not override the start method in a way that breaks the functionality of the Bike class.
+
+Interface Segregation Principle (ISP)
+ - Interfaces should be designed to be client-specific, and clients should not implement unnecessary functions which are of no use.
+ - Example: We have two interfaces Chef_Interface with method as cookFood() and Waiter_Interface with method as serveFood().
+   If class Chef implements both interfaces, then it method serverFood() is not relevant to its role. So, we should implement separate interfaces for Chef and Waiter.
+
+Dependency Inversion Principle (DIP)
+ - Class should depend on interfaces or abstractions, not on concrete classes.
+ - Example: If we have two types of Keyboard and Mouse i.e. wired and wireless, then we should create an interface for Keyboard and Mouse.
+   The classes that use these interfaces should depend on the interfaces, not on the concrete classes. This way, we can easily switch between wired and wireless without changing the code that uses them.
