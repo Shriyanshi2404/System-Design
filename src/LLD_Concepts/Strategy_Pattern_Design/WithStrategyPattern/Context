@@ -1,0 +1,12 @@
+We will use strategy pattern to solve the problem of duplicate driving capability in both 'OffRoadVehicle' and 'SportVehicle' sub-classes.
+NOTE: Whenever the sub-classes is implementing same code (duplicate code) which is not present in the parent class, we will use strategy pattern to solve this problem.
+
+- We will create a DrivingStrategy interface that will have a method drive().
+- We will create two classes: SportDrivingStrategy and OffRoadDrivingStrategy that will implement the DrivingStrategy interface.
+- We will create a Vehicle class that will have a DrivingStrategy object.
+- The Vehicle class will have a method drive() which tells the driving strategy of specific vehicle
+- We will create three sub-classes: OffRoadVehicle, SportVehicle and PassengerVehicle, each of which extends the Vehicle class.
+- The OffRoadVehicle and SportVehicle classes will pass the OffRoadDrivingStrategy and SportDrivingStrategy respectively to the constructor of the vehicle, which will set the driving strategy in driveObj for the vehicle
+- The PassengerVehicle class will pass NormalDrivingStrategy to the constructor of the vehicle, which means it will use the default driving strategy of the vehicle.
+- Finally, we will create a main class to test the implementation.
+- This design will allow us to easily add new driving strategies in the future without modifying the existing code, thus adhering to the Open/Closed Principle (OCP) of SOLID principles.
