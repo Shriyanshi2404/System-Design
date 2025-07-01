@@ -1,4 +1,4 @@
-package LLD_Concepts.Strategy_Pattern_Design.WithStrategyPattern;
+package LLD_Concepts.Strategy_Design_Pattern.WithStrategyPattern;
 
 /**
  * Main class to demonstrate the Strategy Pattern in action.
