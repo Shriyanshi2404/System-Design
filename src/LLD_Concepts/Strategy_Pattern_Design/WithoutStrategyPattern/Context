@@ -1,0 +1,10 @@
+We have defined a Vehicle class that has a method drive() which prints "Normal Driving capability".
+- We have three sub-classes: OffRoadVehicle, SportVehicle and PassengerVehicle, each of which extends the Vehicle class.
+1. PassengerVehicle class: It's using the drive() method from the Vehicle class, which means it inherits the normal driving capability.
+2. OffRoadVehicle class: It overrides the drive() method to provide its own implementation, which returns "Sport Driving capability".
+3. SportVehicle class: It also overrides the drive() method to provide its own implementation, which returns "Sport Driving capability".
+// This design has the following issues:
+- And both 'OffRoadVehicle' and 'SportVehicle' sub-classes have a common functionality of driving the vehicle in drive() method i.e. which returns "Sport Driving capability".
+- Here, we are using duplicate driving capability in both of these sub-classes.
+- This is a violation of the DRY (Don't Repeat Yourself) principle, as we are repeating the same code in multiple places.
+- We will solve this by using the Strategy Pattern.
