@@ -1,6 +1,9 @@
 We will use strategy pattern to solve the problem of duplicate driving capability in both 'OffRoadVehicle' and 'SportVehicle' sub-classes.
 NOTE: Whenever the sub-classes is implementing same code (duplicate code) which is not present in the parent class, we will use strategy pattern to solve this problem.
 
+In Strategy pattern, we first create an abstraction of algorithm. This is an interface having the abstract operation. Then we create implementations of this abstraction and these are called strategies.
+A client will always call the abstraction, and will pass a context object. This context object will decide which strategy to use.
+
 - We will create a DrivingStrategy interface that will have a method drive().
 - We will create two classes: SportDrivingStrategy and OffRoadDrivingStrategy that will implement the DrivingStrategy interface.
 - We will create a Vehicle class that will have a DrivingStrategy object.
