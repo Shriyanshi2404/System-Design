@@ -1,6 +1,6 @@
-package LLD_Concepts.Strategy_Pattern_Design.WithStrategyPattern;
+package LLD_Concepts.Strategy_Design_Pattern.WithStrategyPattern;
 
-import LLD_Concepts.Strategy_Pattern_Design.WithStrategyPattern.Strategy.SportsDriveStrategy;
+import LLD_Concepts.Strategy_Design_Pattern.WithStrategyPattern.Strategy.SportsDriveStrategy;
 
 public class OffRoadVehicle extends Vehicle {
     /** OffRoadVehicle is a subclass of Vehicle.
