@@ -1,0 +1,26 @@
+The Decorator Design Pattern is a structural pattern that allows behavior to be added to individual objects, dynamically, without affecting the behavior of other objects from the same class. It is typically used to adhere to the Open/Closed Principle, enabling classes to be open for extension but closed for modification.
+
+Key Concepts:
+- Component (Pizza): Defines the interface for objects that can have responsibilities added to them dynamically.
+- ConcreteComponent (Margeritha, Farmhouse): Implements the Component interface. These are the base objects to which additional responsibilities can be attached.
+- Decorator (ToppingDecorator): Implements the Component interface and has a reference to a Component object. It delegates operations to the component and can add its own behavior before or after delegating.
+- ConcreteDecorator (ExtraCheeseTopping, ExtraMushroomTopping): Extends the Decorator and adds responsibilities to the component.
+
+Example in this project:
+- 'Pizza' is the base interface.
+- 'BasePizza' is an abstract class implementing 'Pizza'.
+- 'Margeritha' and 'Farmhouse' are concrete pizzas.
+- 'ToppingDecorator' is an abstract decorator class.
+- 'ExtraCheeseTopping and 'ExtraMushroomTopping' are concrete decorators that add extra cheese or mushrooms to the pizza.
+
+Usage:
+You can wrap a pizza object with one or more decorators to add toppings dynamically at runtime. For example:
+
+```
+Pizza pizza = new Farmhouse();
+pizza = new ExtraCheeseTopping(pizza);
+pizza = new ExtraMushroomTopping(pizza);
+System.out.println(pizza.cost());
+```
+
+This pattern is useful when you want to add responsibilities to objects without subclassing and want to combine several responsibilities flexibly.
