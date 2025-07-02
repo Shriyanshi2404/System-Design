@@ -5,20 +5,15 @@ import LLD_Concepts.Observer_Design_Pattern.Observable.StockObservable;
 import LLD_Concepts.Observer_Design_Pattern.Observer.EmailNotificationObserverImpl;
 import LLD_Concepts.Observer_Design_Pattern.Observer.MobileNotificationObserverImpl;
 import LLD_Concepts.Observer_Design_Pattern.Observer.NotifactionAlertObserver;
-import jdk.jfr.Configuration;
 
-import javax.swing.ImageIcon;
+/**
+ * Store class to demonstrate the Observer Design Pattern.
+ * It simulates a store that tracks stock levels of a product (e.g., iPhone)
+ * and notifies observers when stock levels change.
+ */
 public class Store {
 
     public static void main(String[] args) {
-
-        Store store = new Store();
-        ImageIcon imageIcon = new ImageIcon("src/resources/ObserverDesignPattern.png");
-
-        // Display the image icon (this is just a placeholder, actual GUI code would be needed to show it)
-        System.out.println("Store image icon: " + imageIcon.getDescription());
-
-
         // Create a instance of StockObservable and NotificationAlertObservers
         StockObservable iphoneStockObservable = new IphoneObservableImpl(0);
 
