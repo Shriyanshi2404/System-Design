@@ -1,10 +1,10 @@
-package LLD_Concepts.Observer_Design_Pattern;
+package LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern;
 
-import LLD_Concepts.Observer_Design_Pattern.Observable.IphoneObservableImpl;
-import LLD_Concepts.Observer_Design_Pattern.Observable.StockObservable;
-import LLD_Concepts.Observer_Design_Pattern.Observer.EmailNotificationObserverImpl;
-import LLD_Concepts.Observer_Design_Pattern.Observer.MobileNotificationObserverImpl;
-import LLD_Concepts.Observer_Design_Pattern.Observer.NotifactionAlertObserver;
+import LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observable.IphoneObservableImpl;
+import LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observable.StockObservable;
+import LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observer.EmailNotificationObserverImpl;
+import LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observer.MobileNotificationObserverImpl;
+import LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observer.NotifactionAlertObserver;
 
 /**
  * Store class to demonstrate the Observer Design Pattern.

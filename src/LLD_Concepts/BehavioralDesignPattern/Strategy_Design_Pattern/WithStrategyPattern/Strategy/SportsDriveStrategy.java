@@ -1,4 +1,4 @@
-package LLD_Concepts.Strategy_Design_Pattern.WithStrategyPattern.Strategy;
+package LLD_Concepts.BehavioralDesignPattern.Strategy_Design_Pattern.WithStrategyPattern.Strategy;
 
 public class SportsDriveStrategy implements DrivingStrategy {
     /**

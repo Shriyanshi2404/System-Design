@@ -1,6 +1,6 @@
-package LLD_Concepts.Observer_Design_Pattern.Observable;
+package LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observable;
 
-import LLD_Concepts.Observer_Design_Pattern.Observer.NotifactionAlertObserver;
+import LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observer.NotifactionAlertObserver;
 
 import java.util.ArrayList;
 import java.util.List;

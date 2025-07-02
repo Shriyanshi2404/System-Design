@@ -1,4 +1,4 @@
-package LLD_Concepts.Strategy_Design_Pattern.WithoutStrategyPattern;
+package LLD_Concepts.BehavioralDesignPattern.Strategy_Design_Pattern.WithoutStrategyPattern;
 
 import java.util.ArrayList;
 import java.util.List;
