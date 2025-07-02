@@ -1,0 +1,77 @@
+**Observer Design Pattern Notes (Java Example)**
+
+---
+
+### 1. **Definition**
+The Observer Design Pattern defines a one-to-many dependency between objects so that when one object (the Subject/Observable) changes state, all its dependents (Observers) are notified and updated automatically.
+
+---
+
+### 2. **Participants**
+- **Observable (Subject):** Maintains a list of observers and notifies them of state changes.
+- **Observer:** Defines an updating interface for objects that should be notified of changes in the subject.
+
+---
+
+### 3. **Structure in Your Code**
+- **Observable Interface (`StockObservable`):**
+  Declares methods to add/remove observers and to notify them.
+- **Concrete Observable (`IphoneObservableImpl`):**
+  Implements the observable interface, manages stock count, and notifies observers on changes.
+- **Observer Interface (`NotificationAlertObserver`):**
+  Declares the `update()` method to be called when the observable changes.
+- **Concrete Observers (`EmailNotificationObserverImpl`, `MobileNotificationObserverImpl`):**
+  Implement the observer interface and define how to react to notifications (e.g., send email or mobile alerts).
+
+---
+
+### 4. **How It Works**
+- Observers register themselves with the observable.
+- When the observable's state changes (e.g., stock count changes), it calls `update()` on all registered observers.
+- Each observer reacts according to its implementation (e.g., sends an email or mobile notification).
+
+---
+
+### 5. **Example Flow**
+1. Create an observable (e.g., `IphoneObservableImpl`).
+2. Create observers (e.g., `EmailNotificationObserverImpl`, `MobileNotificationObserverImpl`).
+3. Register observers with the observable.
+4. Change the observable's state (e.g., update stock count).
+5. Observable notifies all registered observers.
+
+---
+
+### 6. **Benefits**
+- Loose coupling between observable and observers.
+- Easy to add new observer types without modifying observable code.
+- Promotes code reusability and flexibility.
+
+---
+
+### 7. **Use Cases**
+- Event handling systems (GUI, messaging).
+- Stock price updates.
+- Notification systems.
+
+---
+
+### 8. **Sample Class Diagram**
+```
+StockObservable <|-- IphoneObservableImpl
+NotificationAlertObserver <|-- EmailNotificationObserverImpl
+NotificationAlertObserver <|-- MobileNotificationObserverImpl
+
+IphoneObservableImpl *-- NotificationAlertObserver (list)
+```
+
+---
+
+### 9. **Key Points**
+- Observable manages a list of observers.
+- Observers implement a common interface.
+- State changes in observable trigger notifications to all observers.
+- Observers decide how to handle the notification.
+
+---
+
+This pattern is ideal for scenarios where multiple objects need to react to changes in another object, as shown in your `Store` example.
