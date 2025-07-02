@@ -1,6 +1,6 @@
-package LLD_Concepts.Strategy_Design_Pattern.WithStrategyPattern;
+package LLD_Concepts.BehavioralDesignPattern.Strategy_Design_Pattern.WithStrategyPattern;
 
-import LLD_Concepts.Strategy_Design_Pattern.WithStrategyPattern.Strategy.NormalDriveStrategy;
+import LLD_Concepts.BehavioralDesignPattern.Strategy_Design_Pattern.WithStrategyPattern.Strategy.NormalDriveStrategy;
 
 public class PassengerVehicle extends Vehicle {
     /** PassengerVehicle is a subclass of Vehicle.

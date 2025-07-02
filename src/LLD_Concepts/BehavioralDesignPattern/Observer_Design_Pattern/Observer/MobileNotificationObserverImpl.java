@@ -1,6 +1,6 @@
-package LLD_Concepts.Observer_Design_Pattern.Observer;
+package LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observer;
 
-import LLD_Concepts.Observer_Design_Pattern.Observable.StockObservable;
+import LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observable.StockObservable;
 
 
 public class MobileNotificationObserverImpl implements NotifactionAlertObserver {

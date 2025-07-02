@@ -1,4 +1,4 @@
-package LLD_Concepts.Observer_Design_Pattern.Observer;
+package LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observer;
 
 /**
  * NotificationAlertObserver interface defines the method for observers

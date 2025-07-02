@@ -1,6 +1,6 @@
-package LLD_Concepts.Observer_Design_Pattern.Observable;
+package LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observable;
 
-import LLD_Concepts.Observer_Design_Pattern.Observer.NotifactionAlertObserver;
+import LLD_Concepts.BehavioralDesignPattern.Observer_Design_Pattern.Observer.NotifactionAlertObserver;
 
 /**
  * StockObservable interface defines the methods for managing stock items
