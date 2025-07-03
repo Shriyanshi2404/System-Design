@@ -1,6 +1,6 @@
 # Factory Design Pattern
 
-![Factory Design Pattern](../../resources/FactoryDesignPattern.png)
+![Factory Design Pattern](../../../resources/FactoryDesignPattern.png)
 
 This image visually represents the Factory Design Pattern. You can refer to the diagram above for a better understanding of the relationships between the Factory and Product components.
 
