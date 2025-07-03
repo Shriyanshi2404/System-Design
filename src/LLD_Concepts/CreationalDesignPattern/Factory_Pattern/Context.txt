@@ -1,0 +1,41 @@
+Factory Design Pattern
+
+Problem Statement:
+When creating objects in an application, directly instantiating objects using the 'new' operator leads to tight coupling between the client code and specific object creation.
+This makes the system less flexible and harder to maintain when new object types need to be added.
+So, whenever we need to create objects, we should use a factory design pattern that handles the instantiation of objects based on the conditions provided.
+
+Solution:
+The Factory Design Pattern provides a solution by:
+1. Factory class is a single point responsible for object instantiation, a client doesn't need to know how the objects are created
+2. Defining an interface for creating objects
+3. Letting subclasses decide which class to instantiate
+
+Key Parts:
+1. Product Interface (Shape): Declares the interface that all concrete products must implement
+2. Concrete Products (Circle, Square): Classes that implement the product interface
+3. Factory (ShapeFactory): Creates and returns concrete product objects
+
+Benefits:
+1. Loose Coupling: Client code is decoupled from the actual implementation classes
+2. Single Responsibility: Object creation logic is centralized in the factory class
+3. Open/Closed Principle: New shapes can be added without modifying existing code
+4. Encapsulation: Object creation details are hidden from the client
+
+Real-world Example:
+In this implementation, we have a Shape interface with concrete implementations (Circle and Square). The ShapeFactory handles the creation of specific shape objects based on the type requested. This pattern is commonly used in:
+- UI Component Libraries
+- Database Connection Management
+- Document Creation Systems
+- Plugin Architectures
+
+Usage:
+ShapeFactory shapeFactory = new ShapeFactory();
+Shape circle = shapeFactory.getShape("CIRCLE");
+Shape square = shapeFactory.getShape("SQUARE");
+
+When to Use:
+1. When a class can't expect the type of objects, it needs to create
+2. When you want to delegate the responsibility of object creation to a separate class
+3. When you need to work with families of related products
+4. When you want to provide a library of products without exposing their implementations
