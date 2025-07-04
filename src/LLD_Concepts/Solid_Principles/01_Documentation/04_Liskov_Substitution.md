@@ -1,20 +1,5 @@
 # Liskov Substitution Principle (LSP) in Java
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Definition](#definition)
-3. [Bad Example - LSP Violation](#bad-example---lsp-violation)
-4. [Good Example - LSP Compliance](#good-example---lsp-compliance)
-5. [Another Example - Bike and Cycle](#another-example---bike-and-cycle)
-6. [Benefits of Following LSP](#benefits-of-following-lsp)
-7. [Conclusion](#conclusion)
-
----
-
-## Introduction
-
-The **Liskov Substitution Principle (LSP)** is the third principle of SOLID design principles, It focuses on the behavior of inheritance relationships and ensures that objects of a superclass can be replaced with objects of a subclass without breaking the application.
-
 ## Definition
 
 > **"Objects of a superclass should be replaceable with objects of a subclass without altering the correctness of the program."**

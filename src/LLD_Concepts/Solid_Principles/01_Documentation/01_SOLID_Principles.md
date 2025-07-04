@@ -7,24 +7,24 @@ The **SOLID** principles are a set of five design principles in object-oriented 
 **Definition:** A class should have only one reason to change, meaning it should only have one job or responsibility.
 
 **Example:** 
-- ✅ **Good:** `Invoice` class handles the calculation of total amount of marker, while a separate class handles the printing of the invoice.
-- ❌ **Bad:** A single class handling both invoice calculation and printing.
+- ✅ **Good:** `Invoice` class handles calculation of total amount, `InvoicePrint` class handles printing, and `SaveInvoice` class handles saving to database - each class has a single responsibility.
+- ❌ **Bad:** A single `Invoice` class handling calculation, printing, and saving all together.
 
 ## 2. Open/Closed Principle (OCP)
 
 **Definition:** Software entities should be open for extension but closed for modification.
 
 **Example:**
-- ✅ **Good:** If we want to save Invoice in a different format, we can create new classes like `SaveToDB` and `SaveToFile` that extend the Invoice class without modifying the original class.
-- ❌ **Bad:** Modifying the existing Invoice class every time we need a new save format.
+- ✅ **Good:** `PaymentProcessor` uses `PaymentMethod` interface, allowing new payment types like `CreditCard`, `PayPal`, `UPI` without modifying existing code.
+- ❌ **Bad:** `PaymentProcessor` with if-else statements for each payment method, requiring modification every time a new payment type is added.
 
 ## 3. Liskov Substitution Principle (LSP)
 
 **Definition:** If Class B is a subtype of Class A, then we should be able to replace object of A with object of B without breaking the behavior of the program.
 
 **Example:**
-- ✅ **Good:** `Bike` has a method to start the engine. If we have a `Car`, we can override the method to start the engine appropriately.
-- ❌ **Bad:** If we create a subclass `Cycle` that does not have an engine, it should not override the start method in a way that breaks the functionality expected from the `Bike` class.
+- ✅ **Good:** `ReadableFile` and `WriteableFile` both implement proper file operations where `WriteableFile` extends `ReadableFile` capabilities.
+- ❌ **Bad:** `ReadOnlyFile` extending `File` but throwing exception for `write()` method breaks the expected behavior.
 
 ## 4. Interface Segregation Principle (ISP)
 
@@ -41,10 +41,8 @@ The **SOLID** principles are a set of five design principles in object-oriented 
 **Definition:** Classes should depend on interfaces or abstractions, not on concrete classes.
 
 **Example:**
-- ✅ **Good:** If we have two types of Keyboard and Mouse (wired and wireless), we should create interfaces for `Keyboard` and `Mouse`. The classes that use these interfaces should depend on the interfaces, not on the concrete classes.
-- ❌ **Bad:** Directly depending on concrete classes like `WiredKeyboard` or `WirelessMouse`.
-
-This approach allows us to easily switch between wired and wireless implementations without changing the code that uses them.
+- ✅ **Good:** `NotificationService` depends on `NotificationChannel` interface, allowing use of both `EmailService` and `SMSService` implementations.
+- ❌ **Bad:** `NotificationService` directly depending on concrete `EmailService` and `SMSService` classes, making it tightly coupled.
 
 ---
 
