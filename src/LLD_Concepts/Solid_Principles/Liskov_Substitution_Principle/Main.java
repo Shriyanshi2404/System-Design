@@ -6,7 +6,7 @@ package LLD_Concepts.Solid_Principles.Liskov_Substitution_Principle;
  * This means that subclasses should extend the behavior of the parent class without changing its expected behavior.
  * Example: Bike interface can be implemented by MotorCycle and Cycle classes, allowing both to be used interchangeably.
  */
-public class Liskov_Substitution_Principle {
+public class Main {
 
     public static void main(String[] args) {
 
