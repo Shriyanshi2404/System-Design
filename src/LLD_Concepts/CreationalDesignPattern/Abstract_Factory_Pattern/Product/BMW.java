@@ -1,4 +1,4 @@
-package LLD_Concepts.CreationalDesignPattern.Abstract_Factory_Pattern;
+package LLD_Concepts.CreationalDesignPattern.Abstract_Factory_Pattern.Product;
 
 public class BMW implements Vehicle {
 

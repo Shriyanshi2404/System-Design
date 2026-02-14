@@ -1,4 +1,9 @@
-package LLD_Concepts.CreationalDesignPattern.Abstract_Factory_Pattern;
+package LLD_Concepts.CreationalDesignPattern.Abstract_Factory_Pattern.Factory;
+
+import LLD_Concepts.CreationalDesignPattern.Abstract_Factory_Pattern.Product.BMW;
+import LLD_Concepts.CreationalDesignPattern.Abstract_Factory_Pattern.Product.Mercedes;
+import LLD_Concepts.CreationalDesignPattern.Abstract_Factory_Pattern.Product.Vehicle;
+
 /*
  * LuxuryVehicleFactory.java
  * This class implements the VehicleFactory interface to create luxury vehicles.
