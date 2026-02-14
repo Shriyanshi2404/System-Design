@@ -1,10 +1,19 @@
 package LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern;
+
+import LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.Base.BasePizza;
+import LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.Base.Farmhouse;
+import LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.Base.Margeritha;
+import LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.Base.VeggieDelight;
+import LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.ToppingDecorator.ExtraCheeseTopping;
+import LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.ToppingDecorator.ExtraMushroomTopping;
+import LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.ToppingDecorator.ToppingDecorator;
+
 /**
  * The Decorator Design Pattern allows behavior to be added to individual objects, either statically or dynamically,
  * without affecting the behavior of other objects from the same class.
  * In this example, we are decorating pizzas with toppings.
  */
-public class Pizza {
+public class PizzaShop {
     public static void main(String[] args) {
         BasePizza pizza = new Margeritha();
         System.out.println("Margeritha pizza" + " costs: " + pizza.costOfPizza());

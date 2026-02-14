@@ -1,4 +1,6 @@
-package LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern;
+package LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.ToppingDecorator;
+
+import LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.Base.BasePizza;
 
 public class ExtraMushroomTopping extends ToppingDecorator {
 
