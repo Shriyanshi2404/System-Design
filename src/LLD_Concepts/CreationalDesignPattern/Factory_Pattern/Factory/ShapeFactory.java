@@ -1,4 +1,9 @@
-package LLD_Concepts.CreationalDesignPattern.Factory_Pattern;
+package LLD_Concepts.CreationalDesignPattern.Factory_Pattern.Factory;
+
+import LLD_Concepts.CreationalDesignPattern.Factory_Pattern.Product.Circle;
+import LLD_Concepts.CreationalDesignPattern.Factory_Pattern.Product.Shape;
+import LLD_Concepts.CreationalDesignPattern.Factory_Pattern.Product.Square;
+
 /**
  * ShapeFactory class that implements the Factory Design Pattern.
  * It is responsible for creating instances of shapes based on the provided type.

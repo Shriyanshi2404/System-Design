@@ -1,4 +1,4 @@
-package LLD_Concepts.CreationalDesignPattern.Factory_Pattern;
+package LLD_Concepts.CreationalDesignPattern.Factory_Pattern.Product;
 /**
  * Shape interface that defines the methods for different shapes.
  * All shapes must implement these methods to provide their specific behavior.
