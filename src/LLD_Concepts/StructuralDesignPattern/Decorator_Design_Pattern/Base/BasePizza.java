@@ -1,4 +1,4 @@
-package LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern;
+package LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.Base;
 /**
  * BasePizza is an abstract class that defines the structure for pizza objects.
  * It declares two abstract methods: costOfPizza() and pizzaName().

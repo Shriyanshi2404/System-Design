@@ -1,4 +1,4 @@
-package LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern;
+package LLD_Concepts.StructuralDesignPattern.Decorator_Design_Pattern.Base;
 
 public class Margeritha extends BasePizza {
 
