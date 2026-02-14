@@ -1,4 +1,8 @@
 package LLD_Concepts.CreationalDesignPattern.Factory_Pattern;
+
+import LLD_Concepts.CreationalDesignPattern.Factory_Pattern.Factory.ShapeFactory;
+import LLD_Concepts.CreationalDesignPattern.Factory_Pattern.Product.Shape;
+
 /**
  * Factory Pattern Example
  * This example demonstrates the Factory Design Pattern where we create a ShapeFactory to generate different types of shapes.
@@ -6,7 +10,7 @@ package LLD_Concepts.CreationalDesignPattern.Factory_Pattern;
  * Circle and Square classes implement the Shape interface.
  * The ShapeFactory class is responsible for creating instances of shapes based on the provided type.
  */
-public class Main {
+public class ShapeClient {
 
     public static void main(String[] args) {
         ShapeFactory shapeFactory = new ShapeFactory();

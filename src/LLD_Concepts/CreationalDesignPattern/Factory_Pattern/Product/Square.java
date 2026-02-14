@@ -1,4 +1,4 @@
-package LLD_Concepts.CreationalDesignPattern.Factory_Pattern;
+package LLD_Concepts.CreationalDesignPattern.Factory_Pattern.Product;
 
 public class Square implements Shape {
 
