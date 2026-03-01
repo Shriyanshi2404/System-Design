@@ -5,6 +5,7 @@ import LLD_Concepts.CreationalDesignPattern.Builder_Design_Pattern.Solution.Buil
 import LLD_Concepts.CreationalDesignPattern.Builder_Design_Pattern.Solution.Director.StudentRegistrationDirector;
 import LLD_Concepts.CreationalDesignPattern.Builder_Design_Pattern.Solution.Product.Student;
 
+// Step 6: Client demonstration
 public class StudentDemo {
 
     public static void main(String[] args)
